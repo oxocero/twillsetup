@@ -11,4 +11,15 @@ class ContributorPresenter extends Presenter
             })->implode(', ');
     }
 
+    public function projectsFormatted()
+    {
+        $creditList = [];
+
+        foreach ($this->credits as $credit) {
+            $creditList[] =
+                '<strong>' . $credit->title . '</strong>  - <a class="text-twill-purple" href="/projects/' . $credit->project->slug . '">' . $credit->project->title . '</a>';
+        }
+
+        return $creditList;
+    }
 }

@@ -14,6 +14,8 @@ class Contributor extends Model
     use HasBlocks, HasSlug, HasMedias, HasFiles;
     
     public $presenterAdmin = ContributorPresenter::class;
+    public $presenter = ContributorPresenter::class;
+
 
     protected $fillable = [
         'name',

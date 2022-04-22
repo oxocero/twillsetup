@@ -21,3 +21,6 @@ Route::name('homepage')->get('/', 'App\Http\Controllers\PageController@homepage'
 
 Route::name('project.index')->get('projects', 'App\Http\Controllers\ProjectController@index');
 Route::name('project.show')->get('projects/{slug}', 'App\Http\Controllers\ProjectController@show');
+
+Route::name('contributor.index')->get('contributors', 'App\Http\Controllers\ContributorController@index');
+Route::name('contributor.show')->get('contributors/{slug}', 'App\Http\Controllers\ContributorController@show');
